@@ -9,9 +9,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <link rel="stylesheet" href="styles/main.css">
   <script src="styles/scripts.js"></script>
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | Dog Walkers Booking</title>
 </head>
 
 <body>
@@ -22,10 +23,14 @@
 
   <main>
     <div class="phone-container">
+      <div class="walkingdog">
+        <lottie-player src="images/walkingdog.json" background="transparent" speed="1" loop autoplay></lottie-player>
+      </div>
       <div class="phone">
         <div class="phone-top-cutout"></div>
         <div class="phone-menu">
-          <div class="menu-back"><</div>
+          <div class="menu-back">
+            &lt; </div>
           <img src="images/avatar.jpg" class="menu-avatar" alt="Samuel photo">
           <div class="contact-info">
             <p class="name">Samuel Green</p>
@@ -59,14 +64,16 @@
           </div>
           <div class="chat-user-1-special">
             <div class="special-detail">
-              <input type="radio" id="60min" name="walklength" value="60"><label for="60min">1 hour walk</label>
+              <input type="radio" id="60min" name="walklength" value="60" onclick="walkingDog()"><label for="60min">1
+                hour walk</label>
             </div>
             <div class="special-price">$49</div>
           </div>
         </div>
         <div class="send-message-container">
           <div class="send-message">Type a message…</div>
-          <div class="send-arrow">></div>
+          <div class="send-arrow" onkeydown="happyDog()" onclick="happyDog()" tabindex="0" aria-label="send message" role="button">
+            &gt;</div>
         </div>
       </div>
     </div>
@@ -77,6 +84,9 @@
         discuss arrangements and make bookings. Once the walk has been completed you can rate
         your walker and book again all through the chat.
       </p>
+    </div>
+    <div class="happydog">
+      <lottie-player src="images/happydog.json" background="transparent" speed="1" loop autoplay></lottie-player>
     </div>
   </main>
 
