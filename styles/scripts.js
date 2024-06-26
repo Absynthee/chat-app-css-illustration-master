@@ -1,14 +1,14 @@
-// window.onload = function () {
-//   const elements = document.querySelectorAll(".phone-element");
-//   let delay = 0;
+window.onload = function () {
+  const elements = document.querySelectorAll(".phone-element");
+  let delay = 0;
 
-//   elements.forEach((element) => {
-//     setTimeout(() => {
-//       element.style.opacity = "1";
-//     }, delay);
-//     delay += 1000; // Increase delay for each element
-//   });
-// };
+  elements.forEach((element) => {
+    setTimeout(() => {
+      element.style.opacity = "1";
+    }, delay);
+    delay += 1000; // Increase delay for each element
+  });
+};
 
 function happyDog() {
   const elements = document.querySelectorAll(".happydog");
